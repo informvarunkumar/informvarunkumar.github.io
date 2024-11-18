@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +14,7 @@
         }
         header {
             display: flex;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
             justify-content: space-between;
             align-items: center;
             background: #333;
@@ -23,36 +23,37 @@
         }
         header h1 {
             margin: 0;
-            font-size: 4rem; /* Increased size for name */
+            font-size: 3rem;
         }
         header p {
-            margin: rem 0 0;
-            font-size: 2rem; /* Increased size for affiliation */
-            line-height: 1.5;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
         }
         header img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            margin-top: 1rem;
         }
         nav {
             display: flex;
             justify-content: center;
             background: #444;
             padding: 0.5rem;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0.5rem 1rem;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            width: 80%;
+            width: 90%;
             margin: 2rem auto;
             background: white;
             border-radius: 8px;
@@ -98,15 +99,53 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+            header img {
+                margin: 1rem auto;
+            }
+            header div {
+                margin-bottom: 1rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+            section {
+                width: 95%;
+                padding: 1rem;
+            }
+            table th, table td {
+                padding: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div>
             <h1>Varun Kumar</h1>
-            <p style="line-height: 0.05;">Assistant Librarian</p>
-            <p style="line-height: 0.05;">Sayaji Rao Gaekwad Central Library</p>
-            <p style="line-height: 0.05;">Banaras Hindu University</p>
+            <p>Assistant Librarian</p>
+            <p>Sayaji Rao Gaekwad Central Library</p>
+            <p>Banaras Hindu University</p>
         </div>
         <img src="/images/varun.jpg" alt="Profile Picture">
     </header>
@@ -199,4 +238,3 @@
     </footer>
 </body>
 </html>
-

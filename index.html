@@ -23,10 +23,12 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 4rem; /* Increased size for name */
         }
         header p {
-            margin: 0.5rem 0 0;
+            margin: rem 0 0;
+            font-size: 2rem; /* Increased size for affiliation */
+            line-height: 1.5;
         }
         header img {
             width: 200px;
@@ -102,7 +104,9 @@
     <header>
         <div>
             <h1>Varun Kumar</h1>
-            <p>Assistant Librarian, Sayaji Rao Gaekwad Central Library, Banaras Hindu University</p>
+            <p style="line-height: 0.05;">Assistant Librarian</p>
+            <p style="line-height: 0.05;">Sayaji Rao Gaekwad Central Library</p>
+            <p style="line-height: 0.05;">Banaras Hindu University</p>
         </div>
         <img src="/images/varun.jpg" alt="Profile Picture">
     </header>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +14,12 @@
             color: #333;
         }
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: #333;
             color: white;
-            padding: 1rem 0;
-            text-align: center;
+            padding: 1rem 2rem;
         }
         header h1 {
             margin: 0;
@@ -24,6 +27,12 @@
         }
         header p {
             margin: 0.5rem 0 0;
+        }
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
         }
         nav {
             display: flex;
@@ -91,8 +100,11 @@
 </head>
 <body>
     <header>
-        <h1>Varun Kumar</h1>
-        <p>Assistant Librarian, Sayaji Rao Gaekwad Central Library, Banaras Hindu University</p>
+        <div>
+            <h1>Varun Kumar</h1>
+            <p>Assistant Librarian, Sayaji Rao Gaekwad Central Library, Banaras Hindu University</p>
+        </div>
+        <img src="/images/varun.jpg" alt="Profile Picture">
     </header>
     <nav>
         <a href="#about">About</a>
@@ -127,31 +139,31 @@
             </tr>
             <tr>
                 <td>2023</td>
-                <td>M.Sc.</td>
+                <td>M.Sc</td>
                 <td>Kurukshetra University</td>
                 <td>Computer Science</td>
             </tr>
             <tr>
                 <td>2022</td>
-                <td>MLIS</td>
+                <td>M.L.I.Sc</td>
                 <td>University of Delhi</td>
                 <td>Library & Information Science</td>
             </tr>
             <tr>
                 <td>2021</td>
-                <td>BLIS</td>
+                <td>B.L.I.Sc</td>
                 <td>IGNOU</td>
                 <td>Library & Information Science</td>
             </tr>
             <tr>
                 <td>2020</td>
-                <td>PG Diploma</td>
+                <td>PG Diploma in Data Science and Analytics</td>
                 <td>NIELIT Chennai</td>
                 <td>Data Science and Analytics</td>
             </tr>
             <tr>
                 <td>2019</td>
-                <td>B.E.</td>
+                <td>B.E</td>
                 <td>SLIET Punjab</td>
                 <td>Electronics and Communication</td>
             </tr>
@@ -183,6 +195,4 @@
     </footer>
 </body>
 </html>
-
-
 
